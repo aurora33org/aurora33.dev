@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
 import { z } from 'zod';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const DISCORD_WEBHOOK_URL =
+  'https://discord.com/api/webhooks/1454233929815949372/Q7LtfClNGcc-CtaERfpWmxD5BWt-ADOGVoKTEa2zyV_OAHEMyU7BWld5KEpSeH88ZEld';
 
 const contactSchema = z.object({
   name: z.string().min(2),
@@ -17,57 +17,56 @@ export async function POST(request: Request) {
     // Validate input
     const validatedData = contactSchema.parse(body);
 
-    // Send email using Resend
-    const { data, error } = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'noreply@aurora33.dev',
-      to: process.env.CONTACT_EMAIL || 'hello@aurora33.dev',
-      subject: `New Contact Form Submission from ${validatedData.name}`,
-      html: `
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <style>
-              body { font-family: Arial, sans-serif; line-height: 1.6; }
-              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { background: #F84733; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
-              .content { background: #f8f8f8; padding: 20px; border-radius: 0 0 8px 8px; }
-              .field { margin-bottom: 15px; }
-              .label { font-weight: bold; color: #191A1B; }
-              .value { color: #838A8D; margin-top: 5px; }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-              <div class="header">
-                <h2 style="margin: 0;">New Contact Form Submission</h2>
-                <p style="margin: 5px 0 0 0; opacity: 0.9;">Aurora33.dev</p>
-              </div>
-              <div class="content">
-                <div class="field">
-                  <p class="label">Name:</p>
-                  <p class="value">${validatedData.name}</p>
-                </div>
-                <div class="field">
-                  <p class="label">Email:</p>
-                  <p class="value">${validatedData.email}</p>
-                </div>
-                <div class="field">
-                  <p class="label">Message:</p>
-                  <p class="value">${validatedData.message}</p>
-                </div>
-              </div>
-            </div>
-          </body>
-        </html>
-      `,
+    // Send to Discord webhook
+    const discordResponse = await fetch(DISCORD_WEBHOOK_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        embeds: [
+          {
+            title: '📬 Nuevo mensaje de contacto',
+            color: 0xf84733, // Aurora33 brand color
+            fields: [
+              {
+                name: '👤 Nombre',
+                value: validatedData.name,
+                inline: true,
+              },
+              {
+                name: '📧 Email',
+                value: validatedData.email,
+                inline: true,
+              },
+              {
+                name: '💬 Mensaje',
+                value: validatedData.message,
+                inline: false,
+              },
+            ],
+            footer: {
+              text: 'Aurora33.dev',
+            },
+            timestamp: new Date().toISOString(),
+          },
+        ],
+      }),
     });
 
-    if (error) {
-      console.error('Resend error:', error);
-      return NextResponse.json({ error: error.message }, { status: 400 });
+    if (!discordResponse.ok) {
+      const errorText = await discordResponse.text();
+      console.error('Discord webhook error:', errorText);
+      return NextResponse.json(
+        { error: 'Failed to send notification' },
+        { status: 500 }
+      );
     }
 
-    return NextResponse.json({ success: true, data }, { status: 200 });
+    return NextResponse.json(
+      { success: true, message: 'Message sent successfully' },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Contact API error:', error);
 
