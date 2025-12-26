@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] py-12">
       <div className="container-custom">
-        <div className="grid gap-12 md:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="mb-4 flex items-center gap-2 text-xl font-syne font-bold">
@@ -59,8 +59,8 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
-          <div>
+          {/* Social - Oculto temporalmente */}
+          {/* <div>
             <h4 className="mb-4 font-syne text-lg font-semibold tracking-tight">
               {t.footer.social}
             </h4>
@@ -102,7 +102,7 @@ export function Footer() {
                 <Instagram size={18} />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright */}
