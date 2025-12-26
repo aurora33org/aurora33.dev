@@ -26,18 +26,6 @@ export function HeroSection() {
           }}
           className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-10 blur-3xl"
         />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [90, 0, 90],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-10 blur-3xl"
-        />
       </div>
 
       {/* Grid Background */}
