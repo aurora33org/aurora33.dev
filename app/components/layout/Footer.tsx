@@ -9,7 +9,7 @@ export function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] py-12">
+    <footer className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] py-12 dark:border-[var(--text-muted)]/5">
       <div className="container-custom">
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
@@ -108,7 +108,7 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 border-t border-[var(--text-muted)]/20 pt-8 text-center text-sm text-[var(--text-muted)]">
+        <div className="mt-12 border-t border-[var(--text-muted)]/20 pt-8 text-center text-sm text-[var(--text-muted)] dark:border-[var(--text-muted)]/5">
           <p>
             © {new Date().getFullYear()} Aurora33 Dev. {t.footer.rights}
           </p>

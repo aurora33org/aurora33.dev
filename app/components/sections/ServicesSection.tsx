@@ -11,7 +11,7 @@ export function ServicesSection() {
   const { theme } = useTheme();
 
   return (
-    <section id="services" className="border-t border-[var(--text-muted)]/20 py-24">
+    <section id="services" className="border-t border-[var(--text-muted)]/20 py-24 dark:border-[var(--text-muted)]/5">
       <div className="container-custom">
         <FadeIn>
           <div className="mb-16">

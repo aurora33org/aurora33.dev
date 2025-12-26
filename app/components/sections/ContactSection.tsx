@@ -59,7 +59,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden border-t border-[var(--text-muted)]/20 py-24">
+    <section id="contact" className="relative overflow-hidden border-t border-[var(--text-muted)]/20 py-24 dark:border-[var(--text-muted)]/5">
       {/* Gradient Background Effect */}
       <div className="absolute inset-0 -z-10">
         <motion.div
@@ -136,7 +136,7 @@ export function ContactSection() {
           </div>
 
           {/* Columna DERECHA: Formulario */}
-          <div className="relative overflow-hidden rounded-3xl border border-[var(--text-muted)]/20 bg-[var(--bg)] p-8 md:p-10">
+          <div className="relative overflow-hidden rounded-3xl border border-[var(--text-muted)]/20 bg-[var(--bg)] p-8 md:p-10 dark:border-[var(--text-muted)]/5">
             {/* Gradiente decorativo */}
             <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-to-br from-[var(--contrast)] to-[#d6301e] opacity-10 blur-[100px] pointer-events-none" />
 
