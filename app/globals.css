@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #f8f8f8;
+    --text: #191a1b;
+    --text-muted: #838a8d;
+    --contrast: #f84733;
+  }
+
+  .dark {
+    --bg: #191a1b;
+    --text: #f6f6f6;
+    --text-muted: #f3ddca;
+    --contrast: #f84733;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-quicksand), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-family: var(--font-kangge), sans-serif;
+    font-size: clamp(3.75rem, 8vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-syne), sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  h4 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+  }
+
+  p {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    line-height: 1.75;
+  }
+
+  /* Smooth scrollbar - Lenis */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-custom {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
