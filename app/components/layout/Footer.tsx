@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Sparkles, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useLanguage } from '@/app/hooks/useLanguage';
 
@@ -13,13 +14,14 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="mb-4 flex items-center gap-2 text-xl font-syne font-bold">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--contrast)]">
-                <Sparkles size={18} fill="currentColor" className="text-white" />
-              </div>
-              <span>
-                AURORA33<span className="text-[var(--text-muted)]">.DEV</span>
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/logo/aurora-logo-full-contrast.png"
+                alt="Aurora33.dev"
+                width={140}
+                height={37}
+                className="h-9 w-auto"
+              />
             </div>
             <p className="max-w-sm leading-relaxed text-[var(--text-muted)]">
               {t.footer.description}

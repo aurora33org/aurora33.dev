@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Moon, Sun, Globe, Sparkles, Menu, X } from 'lucide-react';
 import { useTheme } from '@/app/hooks/useTheme';
@@ -79,13 +80,15 @@ export function Navbar() {
 
       <div className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 text-2xl font-syne font-bold">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--contrast)] text-white transition-colors">
-            <Sparkles size={18} fill="currentColor" />
-          </div>
-          <span>
-            AURORA33<span className="text-[var(--text-muted)]">.DEV</span>
-          </span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/logo/aurora-logo-full-contrast.png"
+            alt="Aurora33.dev"
+            width={120}
+            height={32}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
