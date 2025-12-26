@@ -135,7 +135,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] md:hidden dark:border-[var(--text-muted)]/5"
+            className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] md:hidden dark:border-transparent"
           >
             <div className="container-custom flex flex-col gap-4 py-6">
               <Link
@@ -159,7 +159,7 @@ export function Navbar() {
               >
                 {t.nav.contact}
               </Link>
-              <div className="flex items-center gap-4 border-t border-[var(--text-muted)]/20 pt-4 dark:border-[var(--text-muted)]/5">
+              <div className="flex items-center gap-4 border-t border-[var(--text-muted)]/20 pt-4 dark:border-transparent">
                 <button
                   onClick={toggleTheme}
                   aria-label="Toggle theme"
