@@ -24,13 +24,13 @@ export function HeroSection() {
             repeat: Infinity,
             ease: 'linear',
           }}
-          className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-20 blur-3xl"
+          className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-20 blur-3xl dark:opacity-10"
         />
       </div>
 
       {/* Grid Background */}
       <div
-        className="pointer-events-none absolute inset-0 -z-10 opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent)]"
+        className="pointer-events-none absolute inset-0 -z-10 opacity-35 [mask-image:linear-gradient(to_bottom,black,transparent)] dark:opacity-20"
         style={{
           backgroundImage: 'radial-gradient(var(--text-muted) 1px, transparent 1px)',
           backgroundSize: '32px 32px',
