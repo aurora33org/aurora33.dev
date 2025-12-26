@@ -42,7 +42,7 @@ export function HeroSection() {
 
       {/* Grid Background */}
       <div
-        className="pointer-events-none absolute inset-0 -z-10 opacity-20 [mask-image:linear-gradient(to_bottom,transparent,black)]"
+        className="pointer-events-none absolute inset-0 -z-10 opacity-20 [mask-image:linear-gradient(to_bottom,black,transparent)]"
         style={{
           backgroundImage: 'radial-gradient(var(--text-muted) 1px, transparent 1px)',
           backgroundSize: '32px 32px',
