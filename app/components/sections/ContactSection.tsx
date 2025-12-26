@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { motion } from 'framer-motion';
 import { useLanguage } from '@/app/hooks/useLanguage';
 import { Button } from '@/app/components/ui/Button';
 import { Input } from '@/app/components/ui/Input';
@@ -60,7 +61,44 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="border-t border-[var(--text-muted)]/20 py-24">
+    <section id="contact" className="relative overflow-hidden border-t border-[var(--text-muted)]/20 py-24">
+      {/* Gradient Background Effect */}
+      <div className="absolute inset-0 -z-10">
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 90, 0],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+          className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-10 blur-3xl"
+        />
+        <motion.div
+          animate={{
+            scale: [1.2, 1, 1.2],
+            rotate: [90, 0, 90],
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-10 blur-3xl"
+        />
+      </div>
+
+      {/* Grid Background */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10 opacity-20 [mask-image:linear-gradient(to_bottom,black,transparent)]"
+        style={{
+          backgroundImage: 'radial-gradient(var(--text-muted) 1px, transparent 1px)',
+          backgroundSize: '32px 32px',
+        }}
+      />
+
       <div className="container-custom max-w-3xl">
         <FadeIn>
           <div className="mb-16 text-center">
