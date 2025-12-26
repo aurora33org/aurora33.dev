@@ -29,8 +29,13 @@ export interface Content {
   contact: {
     title: string;
     subtitle: string;
-    name: string;
+    scheduleBtn: string;
+    emailLabel: string;
     email: string;
+    name: string;
+    email_field: string;
+    mail_placeholder: string;
+    subject: string;
     message: string;
     submit: string;
     sending: string;
@@ -124,9 +129,14 @@ export const content: Content = {
   },
   contact: {
     title: "Let's Build",
-    subtitle: 'Ready to integrate AI into your ecosystem?',
+    subtitle: 'Tell us about your project',
+    scheduleBtn: 'Schedule Video Call',
+    emailLabel: 'Email Us',
+    email: 'hello@aurora33.dev',
     name: 'Name',
-    email: 'Email',
+    email_field: 'Email',
+    mail_placeholder: 'your@email.com',
+    subject: 'Subject',
     message: 'Tell us about your project...',
     submit: 'Send Message',
     sending: 'Sending...',

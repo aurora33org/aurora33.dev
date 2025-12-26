@@ -18,6 +18,7 @@ export interface Project {
 export interface ContactFormData {
   name: string;
   email: string;
+  subject: string;
   message: string;
 }
 
