@@ -40,7 +40,44 @@ export function Navbar() {
         Skip to main content
       </a>
 
-      <div className="container-custom relative flex items-center justify-between py-4">
+      {/* Theme & Language Toggles - Fixed Top Right Corner */}
+      <div className="fixed right-6 top-6 z-50 hidden items-center gap-4 md:flex">
+        {/* Theme Toggle */}
+        <button
+          onClick={toggleTheme}
+          className="rounded-full p-2 transition-colors hover:bg-[var(--text)]/10"
+          aria-label="Toggle theme"
+        >
+          {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+        </button>
+
+        {/* Language Toggle */}
+        <div className="flex gap-2">
+          <button
+            onClick={() => setLanguage('en')}
+            className={`text-sm font-medium transition-colors ${
+              language === 'en'
+                ? 'text-[var(--contrast)]'
+                : 'text-[var(--text-muted)] hover:text-[var(--text)]'
+            }`}
+          >
+            EN
+          </button>
+          <span className="text-[var(--text-muted)]">/</span>
+          <button
+            onClick={() => setLanguage('es')}
+            className={`text-sm font-medium transition-colors ${
+              language === 'es'
+                ? 'text-[var(--contrast)]'
+                : 'text-[var(--text-muted)] hover:text-[var(--text)]'
+            }`}
+          >
+            ES
+          </button>
+        </div>
+      </div>
+
+      <div className="container-custom flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-2xl font-syne font-bold">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--contrast)] text-white transition-colors">
@@ -77,42 +114,6 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Theme & Language Toggles - Top Right Corner */}
-        <div className="absolute right-0 top-1/2 hidden -translate-y-1/2 items-center gap-4 md:flex">
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="rounded-full p-2 transition-colors hover:bg-[var(--text)]/10"
-            aria-label="Toggle theme"
-          >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-          </button>
-
-          {/* Language Toggle */}
-          <div className="flex gap-2">
-            <button
-              onClick={() => setLanguage('en')}
-              className={`text-sm font-medium transition-colors ${
-                language === 'en'
-                  ? 'text-[var(--contrast)]'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-              }`}
-            >
-              EN
-            </button>
-            <span className="text-[var(--text-muted)]">/</span>
-            <button
-              onClick={() => setLanguage('es')}
-              className={`text-sm font-medium transition-colors ${
-                language === 'es'
-                  ? 'text-[var(--contrast)]'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-              }`}
-            >
-              ES
-            </button>
-          </div>
-        </div>
 
         {/* Mobile Menu Button */}
         <button
