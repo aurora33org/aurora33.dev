@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Moon, Sun, Globe, Sparkles, Menu, X } from 'lucide-react';
+import { Moon, Sun, Sparkles, Menu, X } from 'lucide-react';
 import { useTheme } from '@/app/hooks/useTheme';
 import { useLanguage } from '@/app/hooks/useLanguage';
 import { Button } from '@/app/components/ui/Button';
@@ -71,40 +71,6 @@ export function Navbar() {
           >
             {t.nav.contact}
           </Link>
-
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className="rounded-full p-2 transition-colors hover:bg-[var(--text)]/10"
-            aria-label="Toggle theme"
-          >
-            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-          </button>
-
-          {/* Language Toggle */}
-          <div className="flex gap-2">
-            <button
-              onClick={() => setLanguage('en')}
-              className={`text-sm font-medium transition-colors ${
-                language === 'en'
-                  ? 'text-[var(--contrast)]'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-              }`}
-            >
-              EN
-            </button>
-            <span className="text-[var(--text-muted)]">/</span>
-            <button
-              onClick={() => setLanguage('es')}
-              className={`text-sm font-medium transition-colors ${
-                language === 'es'
-                  ? 'text-[var(--contrast)]'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text)]'
-              }`}
-            >
-              ES
-            </button>
-          </div>
 
           <Link href="#contact">
             <Button size="sm">{t.nav.btn}</Button>
