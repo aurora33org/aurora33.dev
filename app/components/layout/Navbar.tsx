@@ -29,7 +29,7 @@ export function Navbar() {
       animate={{ y: 0 }}
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? 'border-b border-[var(--text-muted)]/20 bg-[var(--bg)]/80 backdrop-blur-md shadow-lg'
+          ? 'border-b border-[var(--text-muted)]/20 bg-[var(--bg)]/80 backdrop-blur-md shadow-lg dark:border-transparent'
           : 'bg-transparent'
       }`}
     >
