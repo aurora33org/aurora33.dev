@@ -112,14 +112,15 @@ export function Footer() {
           <p>
             Copyright © 2025 Aurora33. Built with love and AI
           </p>
-          <div className="mt-4 flex justify-center gap-6 font-semibold">
+          {/* Enlaces legales - Ocultos temporalmente */}
+          {/* <div className="mt-4 flex justify-center gap-6 font-semibold">
             <a href="#" className="transition-opacity hover:opacity-70">
               {t.footer.privacy}
             </a>
             <a href="#" className="transition-opacity hover:opacity-70">
               {t.footer.terms}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
