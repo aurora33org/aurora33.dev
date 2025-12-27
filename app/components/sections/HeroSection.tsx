@@ -67,7 +67,7 @@ export function HeroSection() {
                 {t.hero.cta} <ArrowRight size={18} />
               </Button>
             </a>
-            <a href="#services">
+            <a href="https://croma.aurora33.dev/" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="secondary">
                 {t.hero.ctaSecondary}
               </Button>
