@@ -61,7 +61,7 @@ export const content: Content = {
     btn: 'Start Project',
   },
   hero: {
-    badge: 'AI-Powered Engineering',
+    badge: 'Professional web development and design',
     title: 'AI-Powered,',
     highlight: 'Perfected by Humans',
     subtitle: 'Professional web development and design',

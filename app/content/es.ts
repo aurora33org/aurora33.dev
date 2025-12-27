@@ -10,7 +10,7 @@ export const content: Content = {
     btn: 'Iniciar Proyecto',
   },
   hero: {
-    badge: 'Ingeniería Potenciada por IA',
+    badge: 'Desarrollo y diseño web profesional',
     title: 'Impulsado por IA,',
     highlight: 'Perfeccionado por Humanos',
     subtitle: 'Desarrollo y diseño web profesional',
