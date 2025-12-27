@@ -88,7 +88,7 @@ export const content: Content = {
       {
         id: 'automation',
         title: 'Maintenance and Training',
-        desc: 'Autonomous agents that handle workflows and data processing 24/7.',
+        desc: 'We ensure continuous performance of your platforms with proactive support, constant optimization, and technical guidance. We keep your operation stable, secure, and evolving while your team focuses on growing the business.',
         icon: Zap,
       },
     ],

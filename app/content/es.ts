@@ -37,7 +37,7 @@ export const content: Content = {
       {
         id: 'automation',
         title: 'Mantenimiento y capacitación',
-        desc: 'Agentes autónomos que manejan flujos de trabajo y procesamiento de datos 24/7.',
+        desc: 'Aseguramos el rendimiento continuo de tus plataformas con soporte proactivo, optimización constante y acompañamiento técnico. Mantenemos tu operación estable, segura y en evolución, mientras tu equipo se enfoca en hacer crecer el negocio.',
         icon: Zap,
       },
     ],
