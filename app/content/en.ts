@@ -126,7 +126,7 @@ export const content: Content = {
     ],
   },
   contact: {
-    title: "Let's Build",
+    title: "Let's Talk About Your Project",
     subtitle: 'Tell us about your project',
     scheduleBtn: 'Schedule Video Call',
     emailLabel: 'Email Us',

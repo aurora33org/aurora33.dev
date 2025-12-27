@@ -75,7 +75,7 @@ export const content: Content = {
     ],
   },
   contact: {
-    title: 'Construyamos',
+    title: 'Hablemos de tu proyecto',
     subtitle: 'Cuéntanos sobre tu proyecto',
     scheduleBtn: 'Agendar Videollamada',
     emailLabel: 'Escríbenos por Email',
