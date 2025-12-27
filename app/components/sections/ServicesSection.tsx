@@ -28,8 +28,8 @@ export function ServicesSection() {
           {t.services.items.map((service, index) => {
             const Icon = service.icon;
             return (
-              <SlideIn key={service.id} delay={index * 0.1} direction="up">
-                <Card className="group text-center">
+              <SlideIn key={service.id} delay={index * 0.1} direction="up" className="h-full">
+                <Card className="group h-full text-center">
                   <div
                     className={`mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-lg transition-colors ${
                       theme === 'dark' ? 'bg-neutral-800' : 'bg-neutral-100'
