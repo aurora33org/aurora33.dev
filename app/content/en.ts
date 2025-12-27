@@ -124,7 +124,7 @@ export const content: Content = {
     subtitle: 'Tell us about your project',
     scheduleBtn: 'Schedule Video Call',
     emailLabel: 'Email Us',
-    email: 'hello@aurora33.dev',
+    email: 'contacto@aurora33.org',
     name: 'Name',
     email_field: 'Email',
     mail_placeholder: 'your@email.com',

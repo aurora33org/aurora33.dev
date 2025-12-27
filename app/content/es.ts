@@ -73,7 +73,7 @@ export const content: Content = {
     subtitle: 'Cuéntanos sobre tu proyecto',
     scheduleBtn: 'Agendar Videollamada',
     emailLabel: 'Escríbenos por Email',
-    email: 'hello@aurora33.dev',
+    email: 'contacto@aurora33.org',
     name: 'Nombre',
     email_field: 'Correo Electrónico',
     mail_placeholder: 'tu@email.com',
