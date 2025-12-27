@@ -61,7 +61,7 @@ export function PortfolioSection() {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover opacity-60 transition-opacity duration-300 group-hover:opacity-70"
+                            className="object-cover opacity-70 transition-opacity duration-300 group-hover:opacity-95"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                         </div>
@@ -98,7 +98,7 @@ export function PortfolioSection() {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            className="object-cover opacity-70 transition-all duration-300 group-hover:scale-105 group-hover:opacity-95"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30" />
                         </div>
