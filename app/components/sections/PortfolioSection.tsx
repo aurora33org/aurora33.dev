@@ -50,9 +50,7 @@ export function PortfolioSection() {
               >
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className={`group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[var(--text-muted)]/20 p-8 transition-all duration-300 hover:border-[var(--contrast)]/50 ${
-                    theme === 'dark' ? 'bg-[#191A1B]' : 'bg-white shadow-sm hover:shadow-md'
-                  }`}
+                  className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[var(--text-muted)]/20 transition-all duration-300 hover:border-[var(--contrast)]/50"
                 >
                   {project.featured ? (
                     <>
@@ -63,67 +61,63 @@ export function PortfolioSection() {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover opacity-20 transition-opacity duration-300 group-hover:opacity-30"
+                            className="object-cover opacity-40 transition-opacity duration-300 group-hover:opacity-50"
                           />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                         </div>
                       )}
                       <div className="absolute right-8 top-8 z-10">
-                        <div
-                          className={`flex h-12 w-12 items-center justify-center rounded-full border border-[var(--text-muted)]/30 ${
-                            theme === 'dark' ? 'bg-black' : 'bg-white'
-                          }`}
-                        >
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-black/50 backdrop-blur-sm">
                           <ArrowRight
                             size={20}
-                            className="-rotate-45 transition-transform duration-300 group-hover:rotate-0"
+                            className="-rotate-45 text-white transition-transform duration-300 group-hover:rotate-0"
                           />
                         </div>
                       </div>
-                      <div className="relative z-10 flex h-full flex-col justify-end">
+                      <div className="relative z-10 flex h-full flex-col justify-end p-8">
                         <span className="mb-2 font-mono text-sm text-[var(--contrast)]">
                           {project.category}
                         </span>
-                        <h4 className="mb-4 font-syne text-3xl font-bold">
+                        <h4 className="mb-4 font-syne text-3xl font-bold text-white">
                           {project.title}
                         </h4>
-                        <p className="max-w-md text-[var(--text-muted)]">
+                        <p className="max-w-md text-white/80">
                           {project.desc}
                         </p>
                       </div>
                       <div
-                        className={`absolute -right-20 -top-20 h-96 w-96 rounded-full bg-gradient-to-br opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100 ${
-                          theme === 'dark'
-                            ? 'from-[var(--contrast)]/20 to-orange-500/20'
-                            : 'from-[var(--contrast)]/20 to-orange-500/20'
-                        }`}
+                        className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-gradient-to-br from-[var(--contrast)]/20 to-orange-500/20 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
                       />
                     </>
                   ) : (
                     <>
                       {/* Regular Project */}
                       {project.image && (
-                        <div className="relative mb-4 h-48 w-full overflow-hidden rounded-xl">
+                        <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl">
                           <Image
                             src={project.image}
                             alt={project.title}
                             fill
                             className="object-cover transition-transform duration-300 group-hover:scale-105"
                           />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30" />
                         </div>
                       )}
-                      <div className="flex items-start justify-between">
-                        <span className="text-xs font-bold uppercase tracking-wider text-[var(--contrast)]">
-                          {project.category}
-                        </span>
-                        <ArrowRight className="h-5 w-5 text-[var(--text-muted)] transition-transform duration-300 group-hover:translate-x-1" />
-                      </div>
-                      <div>
-                        <h4 className="mb-2 font-syne text-xl font-bold transition-colors group-hover:text-[var(--contrast)]">
-                          {project.title}
-                        </h4>
-                        <p className="text-sm text-[var(--text-muted)]">
-                          {project.desc}
-                        </p>
+                      <div className="relative z-10 flex h-full flex-col justify-between p-8">
+                        <div className="flex items-start justify-between">
+                          <span className="text-xs font-bold uppercase tracking-wider text-[var(--contrast)]">
+                            {project.category}
+                          </span>
+                          <ArrowRight className="h-5 w-5 text-white/70 transition-transform duration-300 group-hover:translate-x-1" />
+                        </div>
+                        <div>
+                          <h4 className="mb-2 font-syne text-xl font-bold text-white transition-colors group-hover:text-[var(--contrast)]">
+                            {project.title}
+                          </h4>
+                          <p className="text-sm text-white/70">
+                            {project.desc}
+                          </p>
+                        </div>
                       </div>
                     </>
                   )}
