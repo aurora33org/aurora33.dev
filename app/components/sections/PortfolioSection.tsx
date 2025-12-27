@@ -50,7 +50,7 @@ export function PortfolioSection() {
               >
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[var(--text-muted)]/20 transition-all duration-300 hover:border-[var(--contrast)]/50"
+                  className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[var(--text-muted)]/20 transition-all duration-300 hover:border-[var(--contrast)]/50 dark:border-transparent dark:hover:border-transparent"
                 >
                   {project.featured ? (
                     <>
