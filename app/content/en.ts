@@ -66,7 +66,7 @@ export const content: Content = {
     highlight: 'Perfected by Humans',
     subtitle: '',
     cta: 'Explore Portfolio',
-    ctaSecondary: 'Our Process',
+    ctaSecondary: 'View Tool',
   },
   services: {
     title: 'Capabilities',
