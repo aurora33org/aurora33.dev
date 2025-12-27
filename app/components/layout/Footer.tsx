@@ -33,9 +33,14 @@ export function Footer() {
             <h4 className="mb-4 font-syne text-lg font-semibold tracking-tight">
               {t.footer.links}
             </h4>
-            <p className="text-sm font-medium text-[var(--text-muted)]">
+            <a
+              href="https://croma.aurora33.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-[var(--text-muted)] transition-colors hover:text-[var(--contrast)]"
+            >
               Croma - optimiza, convierte y reescala imagenes
-            </p>
+            </a>
           </div>
 
           {/* Social - Oculto temporalmente */}
