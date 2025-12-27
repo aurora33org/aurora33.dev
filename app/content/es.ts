@@ -59,6 +59,7 @@ export const content: Content = {
         title: 'Neon Core',
         desc: 'Herramienta digital presentada como página web que optimiza procesos y conecta sistemas de manera eficiente.',
         featured: false,
+        url: 'https://neon-core.aurora33.site/',
       },
       {
         id: 3,

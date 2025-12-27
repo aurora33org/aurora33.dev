@@ -110,6 +110,7 @@ export const content: Content = {
         title: 'Neon Core',
         desc: 'Digital tool presented as a website that optimizes processes and connects systems efficiently.',
         featured: false,
+        url: 'https://neon-core.aurora33.site/',
       },
       {
         id: 3,
