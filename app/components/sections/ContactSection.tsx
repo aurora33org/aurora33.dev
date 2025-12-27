@@ -137,9 +137,6 @@ export function ContactSection() {
 
           {/* Columna DERECHA: Formulario */}
           <div className="relative overflow-hidden rounded-3xl border border-[var(--text-muted)]/20 bg-[var(--bg)] p-8 md:p-10 dark:border-transparent">
-            {/* Gradiente decorativo */}
-            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-to-br from-[var(--contrast)] to-[#d6301e] opacity-10 blur-[100px] pointer-events-none" />
-
             <form className="relative z-10 flex flex-col gap-6" onSubmit={handleSubmit(onSubmit)}>
               {/* Campo Nombre */}
               <div className="flex flex-col gap-2">
