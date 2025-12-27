@@ -110,15 +110,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-12 border-t border-[var(--text-muted)]/20 pt-8 text-center text-sm text-[var(--text-muted)] dark:border-transparent">
           <p>
-            Copyright © {new Date().getFullYear()} Aurora33. Built with love and AI by{' '}
-            <a
-              href="https://aurora33.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-[var(--contrast)] transition-opacity hover:opacity-70"
-            >
-              Aurora33
-            </a>
+            Copyright © 2025 Aurora33. Built with love and AI
           </p>
           <div className="mt-4 flex justify-center gap-6 font-semibold">
             <a href="#" className="transition-opacity hover:opacity-70">
