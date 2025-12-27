@@ -83,13 +83,15 @@ export function ContactSection() {
               </p>
 
               {/* Botón Agendar Videollamada */}
-              <button
+              <a
+                href="https://calendar.app.google/6pduKuiSuZZPWMvN6"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--contrast)] p-5 text-lg font-bold text-white transition-all hover:opacity-90 group md:w-auto"
-                onClick={(e) => e.preventDefault()}
               >
                 <Video size={20} className="transition-transform group-hover:scale-110" />
                 {t.contact.scheduleBtn}
-              </button>
+              </a>
             </div>
 
             {/* Email info */}
