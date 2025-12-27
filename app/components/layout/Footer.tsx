@@ -28,37 +28,14 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Nuestras Herramientas */}
           <div>
             <h4 className="mb-4 font-syne text-lg font-semibold tracking-tight">
               {t.footer.links}
             </h4>
-            <ul className="space-y-2 text-sm font-medium text-[var(--text-muted)]">
-              <li>
-                <Link
-                  href="#services"
-                  className="transition-colors hover:text-[var(--contrast)]"
-                >
-                  {t.nav.services}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#portfolio"
-                  className="transition-colors hover:text-[var(--contrast)]"
-                >
-                  {t.nav.portfolio}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="transition-colors hover:text-[var(--contrast)]"
-                >
-                  {t.nav.contact}
-                </Link>
-              </li>
-            </ul>
+            <p className="text-sm font-medium text-[var(--text-muted)]">
+              Croma - optimiza, convierte y reescala imagenes
+            </p>
           </div>
 
           {/* Social - Oculto temporalmente */}
