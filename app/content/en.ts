@@ -118,13 +118,6 @@ export const content: Content = {
         desc: 'Automated contract review system reducing manual legal work by 70%.',
         featured: false,
       },
-      {
-        id: 4,
-        category: 'Healthcare',
-        title: 'Diagnostic Assistant',
-        desc: 'Computer vision model assisting radiologists in early anomaly detection.',
-        featured: false,
-      },
     ],
   },
   contact: {

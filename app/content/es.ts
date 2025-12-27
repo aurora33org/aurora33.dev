@@ -67,13 +67,6 @@ export const content: Content = {
         desc: 'Sistema automatizado de revisión de contratos que reduce el trabajo manual legal en un 70%.',
         featured: false,
       },
-      {
-        id: 4,
-        category: 'Salud',
-        title: 'Asistente de Diagnóstico',
-        desc: 'Modelo de visión por computadora que asiste a radiólogos en la detección temprana de anomalías.',
-        featured: false,
-      },
     ],
   },
   contact: {
