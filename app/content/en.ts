@@ -82,7 +82,7 @@ export const content: Content = {
       {
         id: 'neural-networks',
         title: 'Tool Development',
-        desc: 'Deep learning architectures designed for complex pattern recognition tasks.',
+        desc: 'We design custom digital solutions that optimize processes, connect systems, and empower decision-making. We unite strategic thinking with agile execution to create efficient, flexible tools ready to scale.',
         icon: Cpu,
       },
       {

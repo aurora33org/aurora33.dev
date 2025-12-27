@@ -31,7 +31,7 @@ export const content: Content = {
       {
         id: 'neural-networks',
         title: 'Desarrollo de Herramientas',
-        desc: 'Arquitecturas de aprendizaje profundo diseñadas para tareas complejas de reconocimiento de patrones.',
+        desc: 'Diseñamos soluciones digitales a medida que optimizan procesos, conectan sistemas y potencian la toma de decisiones. Unimos pensamiento estratégico con ejecución ágil para crear herramientas eficientes, flexibles y preparadas para escalar.',
         icon: Cpu,
       },
       {
