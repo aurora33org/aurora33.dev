@@ -62,10 +62,9 @@ export const content: Content = {
   },
   hero: {
     badge: 'AI-Powered Engineering',
-    title: 'Building the next generation of',
-    highlight: 'AI Tools.',
-    subtitle:
-      'We specialize in the development of tools with Artificial Intelligence. From custom LLMs to predictive analytics engines.',
+    title: 'AI-Powered, Perfected',
+    highlight: 'by Humans',
+    subtitle: 'Professional web development and design',
     cta: 'Explore Portfolio',
     ctaSecondary: 'Our Process',
   },

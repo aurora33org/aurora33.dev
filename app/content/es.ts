@@ -11,10 +11,9 @@ export const content: Content = {
   },
   hero: {
     badge: 'Ingeniería Potenciada por IA',
-    title: 'Construyendo la próxima generación de',
-    highlight: 'Herramientas con IA.',
-    subtitle:
-      'Nos especializamos en el desarrollo de herramientas con Inteligencia Artificial. Desde LLMs personalizados hasta motores de análisis predictivo.',
+    title: 'Impulsado por IA, Perfeccionado',
+    highlight: 'por Humanos',
+    subtitle: 'Desarrollo y diseño web profesional',
     cta: 'Ver Portafolio',
     ctaSecondary: 'Nuestro Proceso',
   },
