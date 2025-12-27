@@ -11,8 +11,8 @@ export const content: Content = {
   },
   hero: {
     badge: 'Ingeniería Potenciada por IA',
-    title: 'Impulsado por IA, Perfeccionado',
-    highlight: 'por Humanos',
+    title: 'Impulsado por IA,',
+    highlight: 'Perfeccionado por Humanos',
     subtitle: 'Desarrollo y diseño web profesional',
     cta: 'Ver Portafolio',
     ctaSecondary: 'Nuestro Proceso',
