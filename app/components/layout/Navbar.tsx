@@ -42,7 +42,7 @@ export function Navbar() {
       </a>
 
       {/* Theme & Language Toggles - Fixed Top Right Corner */}
-      <div className="fixed right-6 top-6 z-50 hidden items-center gap-4 md:flex">
+      <div className="fixed right-4 top-4 z-50 hidden items-center gap-3 lg:flex">
         {/* Theme Toggle */}
         <button
           onClick={toggleTheme}
@@ -92,7 +92,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-8 lg:flex">
           <Link
             href="#services"
             className="text-[var(--text)] transition-colors hover:text-[var(--contrast)]"
@@ -121,7 +121,7 @@ export function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden"
+          className="lg:hidden"
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -135,50 +135,66 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] md:hidden dark:border-transparent"
+            className="border-t border-[var(--text-muted)]/20 bg-[var(--bg)] lg:hidden dark:border-transparent"
           >
             <div className="container-custom flex flex-col gap-4 py-6">
               <Link
                 href="#services"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-semibold"
+                className="text-lg font-semibold transition-colors hover:text-[var(--contrast)]"
               >
                 {t.nav.services}
               </Link>
               <Link
                 href="#portfolio"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-semibold"
+                className="text-lg font-semibold transition-colors hover:text-[var(--contrast)]"
               >
                 {t.nav.portfolio}
               </Link>
               <Link
                 href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-semibold"
+                className="text-lg font-semibold transition-colors hover:text-[var(--contrast)]"
               >
                 {t.nav.contact}
               </Link>
-              <div className="flex items-center gap-4 border-t border-[var(--text-muted)]/20 pt-4 dark:border-transparent">
+              <Link
+                href="#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Button size="sm" className="w-full">{t.nav.btn}</Button>
+              </Link>
+              <div className="flex items-center justify-between gap-4 border-t border-[var(--text-muted)]/20 pt-4 dark:border-transparent">
                 <button
                   onClick={toggleTheme}
                   aria-label="Toggle theme"
-                  className="flex items-center gap-2"
+                  className="flex items-center gap-2 rounded-full p-2 transition-colors hover:bg-[var(--text)]/10"
                 >
-                  {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
-                  <span className="text-sm">Theme</span>
+                  {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+                  <span className="text-sm font-medium">
+                    {theme === 'light' ? 'Dark' : 'Light'}
+                  </span>
                 </button>
                 <div className="flex gap-2">
                   <button
                     onClick={() => setLanguage('en')}
-                    className={language === 'en' ? 'font-bold' : ''}
+                    className={`text-sm font-medium transition-colors ${
+                      language === 'en'
+                        ? 'text-[var(--contrast)]'
+                        : 'text-[var(--text-muted)] hover:text-[var(--text)]'
+                    }`}
                   >
                     EN
                   </button>
-                  <span>/</span>
+                  <span className="text-[var(--text-muted)]">/</span>
                   <button
                     onClick={() => setLanguage('es')}
-                    className={language === 'es' ? 'font-bold' : ''}
+                    className={`text-sm font-medium transition-colors ${
+                      language === 'es'
+                        ? 'text-[var(--contrast)]'
+                        : 'text-[var(--text-muted)] hover:text-[var(--text)]'
+                    }`}
                   >
                     ES
                   </button>
