@@ -102,6 +102,7 @@ export const content: Content = {
         title: 'Renoir',
         desc: 'Modern platform that conveys visual identity and carefully crafted digital experience, designed with development best practices.',
         featured: true,
+        url: 'https://renoir.aurora33.dev/',
       },
       {
         id: 2,

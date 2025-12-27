@@ -42,7 +42,11 @@ export function PortfolioSection() {
               delay={index * 0.1}
               className={project.featured ? 'lg:col-span-2 lg:row-span-2' : ''}
             >
-              <Link href="#">
+              <Link
+                href={project.url || '#'}
+                target={project.url ? '_blank' : undefined}
+                rel={project.url ? 'noopener noreferrer' : undefined}
+              >
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   className={`group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[var(--text-muted)]/20 p-8 transition-all duration-300 hover:border-[var(--contrast)]/50 ${

@@ -13,6 +13,7 @@ export interface Project {
   title: string;
   desc: string;
   featured?: boolean;
+  url?: string;
 }
 
 export interface ContactFormData {

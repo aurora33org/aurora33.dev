@@ -51,6 +51,7 @@ export const content: Content = {
         title: 'Renoir',
         desc: 'Plataforma moderna que transmite identidad visual y experiencia digital cuidada, diseñada con las mejores prácticas de desarrollo.',
         featured: true,
+        url: 'https://renoir.aurora33.dev/',
       },
       {
         id: 2,
