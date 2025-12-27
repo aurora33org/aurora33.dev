@@ -32,7 +32,7 @@
 
   h1 {
     font-family: var(--font-kangge), sans-serif;
-    font-size: clamp(3.75rem, 8vw, 7rem);
+    font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 700;
     letter-spacing: -0.05em;
     line-height: 1.1;
