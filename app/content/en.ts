@@ -76,7 +76,7 @@ export const content: Content = {
       {
         id: 'custom-ai',
         title: 'Web Development and Design',
-        desc: 'Tailored software solutions integrating OpenAI, Anthropic, or open-source models.',
+        desc: 'We create solid, modern, and results-driven digital experiences. We combine strategy, design, and technology to build fast, scalable websites ready to grow, integrating artificial intelligence and best practices from the start.',
         icon: Terminal,
       },
       {

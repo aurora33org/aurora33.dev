@@ -25,7 +25,7 @@ export const content: Content = {
       {
         id: 'custom-ai',
         title: 'Desarrollo y diseño web',
-        desc: 'Soluciones de software personalizadas integrando modelos de OpenAI, Anthropic o de código abierto.',
+        desc: 'Creamos experiencias digitales sólidas, modernas y orientadas a resultados. Combinamos estrategia, diseño y tecnología para desarrollar sitios web rápidos, escalables y listos para crecer, integrando inteligencia artificial y buenas prácticas desde el inicio.',
         icon: Terminal,
       },
       {
