@@ -118,6 +118,7 @@ export const content: Content = {
         title: 'Verso',
         desc: 'Scalable web solution that combines intuitive design with advanced functionalities for growing projects.',
         featured: false,
+        url: 'https://verso.aurora33.site/',
       },
     ],
   },

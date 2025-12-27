@@ -67,6 +67,7 @@ export const content: Content = {
         title: 'Verso',
         desc: 'Solución web escalable que combina un diseño intuitivo con funcionalidades avanzadas para proyectos en crecimiento.',
         featured: false,
+        url: 'https://verso.aurora33.site/',
       },
     ],
   },
