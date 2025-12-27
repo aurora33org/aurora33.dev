@@ -103,6 +103,7 @@ export const content: Content = {
         desc: 'Website for a boutique hotel that communicates luxury, art, and hospitality through a refined visual experience.',
         featured: true,
         url: 'https://renoir.aurora33.dev/',
+        image: '/mockups/renoir-mockuuups-macbook-air-mockup-on-a-concrete-surface.webp',
       },
       {
         id: 2,
@@ -111,6 +112,7 @@ export const content: Content = {
         desc: 'Fashion website with futuristic aesthetics and a focus on visual identity and urban style.',
         featured: false,
         url: 'https://neon-core.aurora33.site/',
+        image: '/mockups/neon-core-mockuuups-macbook-air-mockup-on-a-modern-slatted-bench.webp',
       },
       {
         id: 3,
@@ -119,6 +121,7 @@ export const content: Content = {
         desc: 'Website for an event space, designed to highlight elegance, ambiance, and versatility.',
         featured: false,
         url: 'https://verso.aurora33.site/',
+        image: '/mockups/verso-mockuuups-macbook-air-mockup-on-a-textured-surface.webp',
       },
     ],
   },

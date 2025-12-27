@@ -14,6 +14,7 @@ export interface Project {
   desc: string;
   featured?: boolean;
   url?: string;
+  image?: string;
 }
 
 export interface ContactFormData {

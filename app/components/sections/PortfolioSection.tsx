@@ -3,6 +3,7 @@
 import { ArrowRight, Database } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/app/hooks/useLanguage';
 import { useTheme } from '@/app/hooks/useTheme';
 import { FadeIn } from '@/app/components/animations/FadeIn';
@@ -56,6 +57,16 @@ export function PortfolioSection() {
                   {project.featured ? (
                     <>
                       {/* Featured Project */}
+                      {project.image && (
+                        <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover opacity-20 transition-opacity duration-300 group-hover:opacity-30"
+                          />
+                        </div>
+                      )}
                       <div className="absolute right-8 top-8 z-10">
                         <div
                           className={`flex h-12 w-12 items-center justify-center rounded-full border border-[var(--text-muted)]/30 ${
@@ -90,11 +101,21 @@ export function PortfolioSection() {
                   ) : (
                     <>
                       {/* Regular Project */}
+                      {project.image && (
+                        <div className="relative mb-4 h-48 w-full overflow-hidden rounded-xl">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                        </div>
+                      )}
                       <div className="flex items-start justify-between">
-                        <span className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                        <span className="text-xs font-bold uppercase tracking-wider text-[var(--contrast)]">
                           {project.category}
                         </span>
-                        <Database className="h-5 w-5 text-[var(--text-muted)]" />
+                        <ArrowRight className="h-5 w-5 text-[var(--text-muted)] transition-transform duration-300 group-hover:translate-x-1" />
                       </div>
                       <div>
                         <h4 className="mb-2 font-syne text-xl font-bold transition-colors group-hover:text-[var(--contrast)]">
