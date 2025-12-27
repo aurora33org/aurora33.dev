@@ -30,13 +30,13 @@ export const content: Content = {
       {
         id: 'neural-networks',
         title: 'Desarrollo de Herramientas',
-        desc: 'Diseñamos soluciones digitales a medida que optimizan procesos, conectan sistemas y potencian la toma de decisiones. Unimos pensamiento estratégico con ejecución ágil para crear herramientas eficientes, flexibles y preparadas para escalar.',
+        desc: 'Diseñamos soluciones digitales a medida que optimizan procesos y potencian la toma de decisiones. Unimos pensamiento estratégico con ejecución ágil para crear herramientas eficientes, flexibles y preparadas para escalar.',
         icon: Cpu,
       },
       {
         id: 'automation',
         title: 'Mantenimiento y capacitación',
-        desc: 'Aseguramos el rendimiento continuo de tus plataformas con soporte proactivo, optimización constante y acompañamiento técnico. Mantenemos tu operación estable, segura y en evolución, mientras tu equipo se enfoca en hacer crecer el negocio.',
+        desc: 'Aseguramos el rendimiento continuo de tus plataformas con soporte proactivo, mantenimiento constante y acompañamiento técnico. Mantenemos tu operación estable, segura y en evolución, mientras tu equipo se enfoca en hacer crecer el negocio.',
         icon: Zap,
       },
     ],

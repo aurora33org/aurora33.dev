@@ -81,13 +81,13 @@ export const content: Content = {
       {
         id: 'neural-networks',
         title: 'Tool Development',
-        desc: 'We design custom digital solutions that optimize processes, connect systems, and empower decision-making. We unite strategic thinking with agile execution to create efficient, flexible tools ready to scale.',
+        desc: 'We design custom digital solutions that optimize processes and empower decision-making. We unite strategic thinking with agile execution to create efficient, flexible tools ready to scale.',
         icon: Cpu,
       },
       {
         id: 'automation',
         title: 'Maintenance and Training',
-        desc: 'We ensure continuous performance of your platforms with proactive support, constant optimization, and technical guidance. We keep your operation stable, secure, and evolving while your team focuses on growing the business.',
+        desc: 'We ensure continuous performance of your platforms with proactive support, constant maintenance, and technical guidance. We keep your operation stable, secure, and evolving while your team focuses on growing the business.',
         icon: Zap,
       },
     ],
