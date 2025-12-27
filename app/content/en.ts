@@ -98,9 +98,9 @@ export const content: Content = {
     projects: [
       {
         id: 1,
-        category: 'Web Development',
+        category: 'Website',
         title: 'Renoir',
-        desc: 'Modern web platform designed with the latest technologies and development best practices.',
+        desc: 'Modern platform that conveys visual identity and carefully crafted digital experience, designed with development best practices.',
         featured: true,
       },
       {

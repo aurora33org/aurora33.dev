@@ -47,9 +47,9 @@ export const content: Content = {
     projects: [
       {
         id: 1,
-        category: 'Web Development',
+        category: 'Sitio Web',
         title: 'Renoir',
-        desc: 'Plataforma web moderna diseñada con las últimas tecnologías y mejores prácticas de desarrollo.',
+        desc: 'Plataforma moderna que transmite identidad visual y experiencia digital cuidada, diseñada con las mejores prácticas de desarrollo.',
         featured: true,
       },
       {
