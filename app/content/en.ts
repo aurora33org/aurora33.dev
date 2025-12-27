@@ -94,7 +94,7 @@ export const content: Content = {
   },
   portfolio: {
     title: 'Selected Work',
-    subtitle: "Tools we've shipped",
+    subtitle: "Projects we've shipped",
     projects: [
       {
         id: 1,

@@ -43,7 +43,7 @@ export const content: Content = {
   },
   portfolio: {
     title: 'Trabajos Seleccionados',
-    subtitle: 'Herramientas que hemos lanzado',
+    subtitle: 'Proyectos que hemos lanzado',
     projects: [
       {
         id: 1,
