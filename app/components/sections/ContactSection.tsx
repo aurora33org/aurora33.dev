@@ -62,7 +62,7 @@ export function ContactSection() {
     <section id="contact" className="relative overflow-hidden border-t border-[var(--text-muted)]/20 py-24 dark:border-transparent">
       {/* Grid Background */}
       <div
-        className="pointer-events-none absolute inset-0 -z-10 opacity-20 [mask-image:linear-gradient(to_bottom,black,transparent)]"
+        className="pointer-events-none absolute inset-0 -z-10 opacity-20 [mask-image:linear-gradient(to_top,black,transparent)]"
         style={{
           backgroundImage: 'radial-gradient(var(--text-muted) 1px, transparent 1px)',
           backgroundSize: '32px 32px',
