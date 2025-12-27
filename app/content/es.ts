@@ -13,7 +13,7 @@ export const content: Content = {
     badge: 'Desarrollo y diseño web profesional',
     title: 'Impulsado por IA,',
     highlight: 'Perfeccionado por Humanos',
-    subtitle: 'Desarrollo y diseño web profesional',
+    subtitle: '',
     cta: 'Ver Portafolio',
     ctaSecondary: 'Nuestro Proceso',
   },

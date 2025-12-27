@@ -64,7 +64,7 @@ export const content: Content = {
     badge: 'Professional web development and design',
     title: 'AI-Powered,',
     highlight: 'Perfected by Humans',
-    subtitle: 'Professional web development and design',
+    subtitle: '',
     cta: 'Explore Portfolio',
     ctaSecondary: 'Our Process',
   },
