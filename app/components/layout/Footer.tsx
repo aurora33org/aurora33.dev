@@ -39,7 +39,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-sm font-medium text-[var(--text-muted)] transition-colors hover:text-[var(--contrast)]"
             >
-              Croma - optimiza, convierte y reescala imagenes
+              Croma: optimiza, convierte y reescala imágenes.
             </a>
           </div>
 
