@@ -36,6 +36,7 @@
     font-weight: 700;
     letter-spacing: -0.05em;
     line-height: 1.1;
+    text-wrap: pretty;
   }
 
   h2,
@@ -44,6 +45,7 @@
     font-family: var(--font-syne), sans-serif;
     font-weight: 700;
     letter-spacing: -0.025em;
+    text-wrap: pretty;
   }
 
   h2 {
@@ -61,6 +63,15 @@
   p {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
     line-height: 1.75;
+    text-wrap: pretty;
+  }
+
+  span,
+  label,
+  a,
+  button,
+  li {
+    text-wrap: pretty;
   }
 
   /* Smooth scrollbar - Lenis */
