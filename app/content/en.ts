@@ -142,7 +142,7 @@ export const content: Content = {
     rights: 'All rights reserved.',
     description:
       'Empowering businesses with cutting-edge AI solutions and custom neural architectures.',
-    links: 'Quick Links',
+    links: 'Our Tools',
     legal: 'Legal',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',

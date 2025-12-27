@@ -91,7 +91,7 @@ export const content: Content = {
     rights: 'Todos los derechos reservados.',
     description:
       'Potenciando empresas con soluciones de IA de vanguardia y arquitecturas neuronales personalizadas.',
-    links: 'Enlaces Rápidos',
+    links: 'Nuestras Herramientas',
     legal: 'Legal',
     privacy: 'Política de Privacidad',
     terms: 'Términos de Servicio',
