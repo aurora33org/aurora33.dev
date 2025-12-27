@@ -15,7 +15,7 @@ export const content: Content = {
     highlight: 'Perfeccionado por Humanos',
     subtitle: '',
     cta: 'Ver Portafolio',
-    ctaSecondary: 'Nuestro Proceso',
+    ctaSecondary: 'Ver Herramienta',
   },
   services: {
     title: 'Capacidades',
@@ -76,7 +76,7 @@ export const content: Content = {
     subtitle: 'Cuéntanos sobre tu proyecto',
     scheduleBtn: 'Agendar Videollamada',
     emailLabel: 'Escríbenos por Email',
-    email: 'contacto@aurora33.org',
+    email: 'hello@aurora33.org',
     name: 'Nombre',
     email_field: 'Correo Electrónico',
     mail_placeholder: 'tu@email.com',
