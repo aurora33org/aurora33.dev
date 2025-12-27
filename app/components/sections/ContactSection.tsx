@@ -60,34 +60,6 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="relative overflow-hidden border-t border-[var(--text-muted)]/20 py-24 dark:border-transparent">
-      {/* Gradient Background Effect */}
-      <div className="absolute inset-0 -z-10">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute -right-40 -top-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-10 blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [90, 0, 90],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-          className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-[var(--contrast)] opacity-10 blur-3xl"
-        />
-      </div>
-
       {/* Grid Background */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-20 [mask-image:linear-gradient(to_bottom,black,transparent)]"
