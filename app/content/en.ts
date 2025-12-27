@@ -71,23 +71,23 @@ export const content: Content = {
   },
   services: {
     title: 'Capabilities',
-    subtitle: 'Our expertise in AI Development',
+    subtitle: 'Our expertise',
     items: [
       {
         id: 'custom-ai',
-        title: 'Custom AI Tools',
+        title: 'Web Development and Design',
         desc: 'Tailored software solutions integrating OpenAI, Anthropic, or open-source models.',
         icon: Terminal,
       },
       {
         id: 'neural-networks',
-        title: 'Neural Networks',
+        title: 'Tool Development',
         desc: 'Deep learning architectures designed for complex pattern recognition tasks.',
         icon: Cpu,
       },
       {
         id: 'automation',
-        title: 'Automation Agents',
+        title: 'Maintenance and Training',
         desc: 'Autonomous agents that handle workflows and data processing 24/7.',
         icon: Zap,
       },

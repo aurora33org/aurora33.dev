@@ -20,23 +20,23 @@ export const content: Content = {
   },
   services: {
     title: 'Capacidades',
-    subtitle: 'Nuestra experiencia en Desarrollo IA',
+    subtitle: 'Nuestra experiencia',
     items: [
       {
         id: 'custom-ai',
-        title: 'Herramientas de IA a Medida',
+        title: 'Desarrollo y diseño web',
         desc: 'Soluciones de software personalizadas integrando modelos de OpenAI, Anthropic o de código abierto.',
         icon: Terminal,
       },
       {
         id: 'neural-networks',
-        title: 'Redes Neuronales',
+        title: 'Desarrollo de Herramientas',
         desc: 'Arquitecturas de aprendizaje profundo diseñadas para tareas complejas de reconocimiento de patrones.',
         icon: Cpu,
       },
       {
         id: 'automation',
-        title: 'Agentes de Automatización',
+        title: 'Mantenimiento y capacitación',
         desc: 'Agentes autónomos que manejan flujos de trabajo y procesamiento de datos 24/7.',
         icon: Zap,
       },
