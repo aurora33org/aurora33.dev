@@ -61,7 +61,7 @@ export function PortfolioSection() {
                             src={project.image}
                             alt={project.title}
                             fill
-                            className="object-cover opacity-40 transition-opacity duration-300 group-hover:opacity-50"
+                            className="object-cover opacity-60 transition-opacity duration-300 group-hover:opacity-70"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                         </div>
