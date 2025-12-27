@@ -110,7 +110,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-12 border-t border-[var(--text-muted)]/20 pt-8 text-center text-sm text-[var(--text-muted)] dark:border-transparent">
           <p>
-            © {new Date().getFullYear()} Aurora33 Dev. {t.footer.rights}
+            Copyright © {new Date().getFullYear()} Aurora33. Built with love and AI by Aurora33
           </p>
           <div className="mt-4 flex justify-center gap-6 font-semibold">
             <a href="#" className="transition-opacity hover:opacity-70">
